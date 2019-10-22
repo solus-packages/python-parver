@@ -1,8 +1,8 @@
 name       : python-parver
-version    : 0.1.1
-release    : 1
+version    : 0.2.1
+release    : 2
 source     :
-    - https://github.com/RazerM/parver/archive/0.1.1.tar.gz : b8a43246df0db98f44bceb2c788fb92d1e536cf56cda73f326d7b0b9ecc537f0
+    - https://github.com/RazerM/parver/archive/0.2.1.tar.gz : 7fcdb486e3c53519a4a70e71a47242ba3c9c8b15804565a1009f338bf5bde43a
 license    : MIT
 component  : programming.python
 summary    : Parse and manipulate version numbers
@@ -11,6 +11,9 @@ description: |
 builddeps  :
     - python-arpeggio
     - python-attrs
+    - python-hypothesis
+    - python-pretend
+    - python-pytest
     - python-setuptools
     - python-six
 rundeps    :
@@ -21,3 +24,5 @@ build      : |
     %python3_setup
 install    : |
     %python3_install
+check      : |
+    %python3_test pytest3
