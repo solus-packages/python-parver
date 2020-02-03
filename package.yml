@@ -1,6 +1,6 @@
 name       : python-parver
 version    : 0.2.1
-release    : 2
+release    : 3
 source     :
     - https://github.com/RazerM/parver/archive/0.2.1.tar.gz : 7fcdb486e3c53519a4a70e71a47242ba3c9c8b15804565a1009f338bf5bde43a
 license    : MIT
